@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+:root{
+    --hue-neutral:black;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+.card {
+    --hue: var(--hue-neutral);
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    background-color: hsl(var(--hue),100%,20%)    
+}
+
+.card.correct{
+    --hue: var (var(--hue-correct))
+}
+
+.card.wrong{
+    --hue: var (var(--hue-wrong))
+}
+
+.card.correct {
+    --hue: var(--hue-correct)
+}
+
+.card.wrong{
+
+    --hue: var(--hue-wrong)
+}
